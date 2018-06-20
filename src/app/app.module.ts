@@ -1,14 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ANALYZE_FOR_ENTRY_COMPONENTS } from '@angular/core';
+import{AlertModule} from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
+import { CoursesListComponent } from './courses-list/courses-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoursesListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
