@@ -14,7 +14,7 @@ export class CoursesListComponent implements OnInit {
   constructor(private db:AngularFireDatabase) { }
 
   ngOnInit() {
-    this.courseObservable=this.getCourse('/Course');
+    this.courseObservable=this.getCourse('/Courses');
   }
 
   getCourse(listPath):Observable<any[]>{

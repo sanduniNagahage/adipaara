@@ -1,5 +1,5 @@
 <ul>
-  <div *ngFor="let course of coursesObservable | async">
+  <div *ngFor="let course of courseObservable | async">
     <alert type="info"[dismissible]="false">
       <h3><a href="#">{{course.title}}</a></h3>
       <p>{{course.description}}</p>
