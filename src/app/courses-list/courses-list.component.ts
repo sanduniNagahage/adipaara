@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import{AngularFireDatabase} from 'angularfire2/database';
+import{ AngularFireDatabase } from 'angularfire2/database';
 
-import {observable} from 'rxjs';
-import { Observable } from '@firebase/util';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-courses-list',
